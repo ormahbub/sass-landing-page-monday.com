@@ -1,10 +1,15 @@
 import "./App.css";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Home from "./Page/Home/Home";
 
 function App() {
   return (
-    <div>
-      <h1>SaaS Landing Page – monday.com Clone</h1>
-    </div>
+    <>
+      <Header />
+      <Home />
+      <Footer />
+    </>
   );
 }
 
