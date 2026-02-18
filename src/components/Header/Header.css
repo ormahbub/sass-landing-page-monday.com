@@ -1,0 +1,45 @@
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.site-logo img {
+  width: 168px;
+}
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+}
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #535768;
+  padding: 5px 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+.nav-menu ul li a:hover {
+  color: #5034ff;
+}
+.product-switcher-btn {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.product-switcher-btn:hover {
+  background-color: #f0f3ff;
+}
+.product-switcher-btn img {
+  max-width: 100%;
+}

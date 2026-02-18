@@ -1,7 +1,11 @@
 import "./Footer.css";
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer id="footer" className="site-footer">
+      <div className="container">Footer</div>
+    </footer>
+  );
 };
 
 export default Footer;
