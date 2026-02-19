@@ -16,6 +16,7 @@
 }
 .nav-menu ul {
   display: flex;
+  margin-left: 20px;
   list-style: none;
 }
 .nav-menu ul li a {
@@ -26,9 +27,11 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
+  border-radius: 4px;
 }
 .nav-menu ul li a:hover {
   color: #5034ff;
+  background-color: #5034ff11;
 }
 .product-switcher-btn {
   width: 40px;
@@ -49,12 +52,13 @@
 
 .btn {
   border: solid 1px #6161ff;
-  border-radius: 50px;
+  border-radius: 50px !important;
   padding-top: 12px !important;
   padding-bottom: 12px !important;
 }
 a.btn.header-btn-1 {
   color: #5034ff;
+  margin-left: 15px;
   background-color: #ffffff;
 }
 a.btn.header-btn-2 {
@@ -69,4 +73,5 @@ a.btn.header-btn-1:hover {
 
 a.btn.header-btn-2:hover {
   color: #f0f3ff;
+  background-color: #5034ff;
 }
