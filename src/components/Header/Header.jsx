@@ -13,35 +13,24 @@ const Header = () => {
           <div className="site-logo max-w-[168px]">
             <img className="max-w-full" src={mondayLogo} alt="Monday Logo" />
           </div>
-       <NavMenu />
+          <NavMenu menu={1} />
         </div>
         <div className="header-right flex items-center gap-5">
-          <nav className="nav-menu">
-            <ul className="secondary-menu flex gap-5 text-sm text-[var(--text-color)]">
-              <li className="menu-item">
-                <NavLink text={"Pricing"} url={"#"} dropdown={false} />
-              </li>
-              <li className="menu-item">
-                <NavLink text={"Login"} url={"#"} dropdown={false} />
-              </li>
-              <li className="menu-item">
-                <Button
-                  text={"Contact sales"}
-                  url={"#"}
-                  style={"btn-outline"}
-                  icon={false}
-                />
-              </li>
-              <li className="menu-item">
-                <Button
-                  text={"Get Started"}
-                  url={"#"}
-                  style={"btn-solid"}
-                  icon={true}
-                />
-              </li>
-            </ul>
-          </nav>
+          <NavMenu menu={2} />
+          <Button
+            text={"Contact sales"}
+            url={"#"}
+            style={"btn-outline"}
+            icon={false}
+          />
+
+          <Button
+            text={"Get Started"}
+            url={"#"}
+            style={"btn-solid"}
+            icon={true}
+          />
+
           <button className="product-switcher-btn max-w-[40px]">
             <img
               className="max-w-full"

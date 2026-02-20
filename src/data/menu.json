@@ -30,37 +30,6 @@
     ]
   },
   {
-    "name": "Main Menu",
-    "menuItems": [
-      {
-        "itemName": "Products",
-        "itemUrl": "#",
-        "dropdown": true
-      },
-      {
-        "itemName": "AI",
-        "itemUrl": "#",
-        "dropdown": true
-      },
-      {
-        "itemName": "Solutions",
-        "itemUrl": "#",
-        "dropdown": true
-      },
-      {
-        "itemName": "Resources",
-        "itemUrl": "#",
-        "dropdown": true
-      },
-      {
-        "itemName": "Enterprise",
-        "itemUrl": "#",
-        "dropdown": false
-      }
-    ]
-  },
-
-  {
     "name": "Secondery Menu",
     "menuItems": [
       {

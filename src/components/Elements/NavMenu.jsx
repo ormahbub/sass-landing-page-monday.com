@@ -1,11 +1,11 @@
 import NavLink from "./NavLink";
 import menuData from "../../data/menu.json";
 
-const NavMenu = () => {
+const NavMenu = ({ menu }) => {
   return (
     <nav className="nav-menu">
       <ul className="primary-menu flex gap-5 text-sm text-[var(--text-color)]">
-        {menuData[0].menuItems.map((menuItem, index) => {
+        {menuData[menu - 1].menuItems.map((menuItem, index) => {
           const { itemName, itemUrl, dropdown } = menuItem;
           return (
             <li key={index}>
