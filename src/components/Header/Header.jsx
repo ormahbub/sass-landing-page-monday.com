@@ -6,7 +6,7 @@ import { RiArrowDownSLine } from "react-icons/ri";
 
 const NavLink = ({ text, url, dropdown }) => {
   return (
-    <a href={url}>
+    <a className="flex items-center gap-2 text-[var(--text-color)]" href={url}>
       {text}
       {dropdown ? (
         <span>
@@ -17,7 +17,6 @@ const NavLink = ({ text, url, dropdown }) => {
       )}
     </a>
   );
-  // return <a href={url}>{`${text} ${dropdown ? <RiArrowDownSLine /> : ""}`}</a>;
 };
 
 const Header = () => {
