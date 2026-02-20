@@ -1,48 +1,78 @@
-{
-  "main-menu": {
+[
+  {
     "name": "Main Menu",
-    "menu-items": [
+    "menuItems": [
       {
-        "item-name": "Products",
-        "item-url": "#",
+        "itemName": "Products",
+        "itemUrl": "#",
         "dropdown": true
       },
       {
-        "item-name": "AI",
-        "item-url": "#",
+        "itemName": "AI",
+        "itemUrl": "#",
         "dropdown": true
       },
       {
-        "item-name": "Solutions",
-        "item-url": "#",
+        "itemName": "Solutions",
+        "itemUrl": "#",
         "dropdown": true
       },
       {
-        "item-name": "Resources",
-        "item-url": "#",
+        "itemName": "Resources",
+        "itemUrl": "#",
         "dropdown": true
       },
       {
-        "item-name": "Enterprise",
-        "item-url": "#",
+        "itemName": "Enterprise",
+        "itemUrl": "#",
+        "dropdown": false
+      }
+    ]
+  },
+  {
+    "name": "Main Menu",
+    "menuItems": [
+      {
+        "itemName": "Products",
+        "itemUrl": "#",
+        "dropdown": true
+      },
+      {
+        "itemName": "AI",
+        "itemUrl": "#",
+        "dropdown": true
+      },
+      {
+        "itemName": "Solutions",
+        "itemUrl": "#",
+        "dropdown": true
+      },
+      {
+        "itemName": "Resources",
+        "itemUrl": "#",
+        "dropdown": true
+      },
+      {
+        "itemName": "Enterprise",
+        "itemUrl": "#",
         "dropdown": false
       }
     ]
   },
 
-  "secondery-menu": {
+  {
     "name": "Secondery Menu",
-    "menu-items": [
+    "menuItems": [
       {
-        "item-name": "Pricing",
-        "item-url": "#",
+        "itemName": "Pricing",
+        "itemUrl": "#",
         "dropdown": false
       },
       {
-        "item-name": "Login",
-        "item-url": "#",
+        "itemName": "Login",
+        "itemUrl": "#",
         "dropdown": false
       }
     ]
   }
-}
+]
