@@ -1,6 +1,24 @@
 import "./Header.css";
 import mondayLogo from "../../assets/images/monday-logo.png";
 import productSwitcherIcon from "../../assets/images/product-switcher-icon.png";
+import { GoArrowRight } from "react-icons/go";
+import { RiArrowDownSLine } from "react-icons/ri";
+
+const NavLink = ({ text, url, dropdown }) => {
+  return (
+    <a href={url}>
+      {text}
+      {dropdown ? (
+        <span>
+          <RiArrowDownSLine />
+        </span>
+      ) : (
+        ""
+      )}
+    </a>
+  );
+  // return <a href={url}>{`${text} ${dropdown ? <RiArrowDownSLine /> : ""}`}</a>;
+};
 
 const Header = () => {
   return (
@@ -13,19 +31,19 @@ const Header = () => {
           <nav className="nav-menu">
             <ul className="primary-menu flex gap-5 text-sm text-[var(--text-color)]">
               <li className="menu-item">
-                <a href="#">Products</a>
+                <NavLink text={"Products"} url={"#"} dropdown={true} />
               </li>
               <li className="menu-item">
-                <a href="#">AI</a>
+                <NavLink text={"AI"} url={"#"} dropdown={true} />
               </li>
               <li className="menu-item">
-                <a href="#">Solutions</a>
+                <NavLink text={"Solutions"} url={"#"} dropdown={true} />
               </li>
               <li className="menu-item">
-                <a href="#">Resources</a>
+                <NavLink text={"Resources"} url={"#"} dropdown={true} />
               </li>
               <li className="menu-item">
-                <a href="#">Enterprise</a>
+                <NavLink text={"Enterprise"} url={"#"} dropdown={false} />
               </li>
             </ul>
           </nav>
@@ -34,10 +52,10 @@ const Header = () => {
           <nav className="nav-menu">
             <ul className="secondary-menu flex gap-5 text-sm text-[var(--text-color)]">
               <li className="menu-item">
-                <a href="#">Pricing</a>
+                <NavLink text={"Pricing"} url={"#"} dropdown={false} />
               </li>
               <li className="menu-item">
-                <a href="#">Log in</a>
+                <NavLink text={"Login"} url={"#"} dropdown={false} />
               </li>
               <li className="menu-item">
                 <a
@@ -48,8 +66,14 @@ const Header = () => {
                 </a>
               </li>
               <li className="menu-item">
-                <a className="btn header-btn-2 py-2 px-4 border border-[var(--primary-color)] bg-[var(--primary-color)] text-white rounded-4xl" href="#">
+                <a
+                  className="btn header-btn-2 py-2 px-4 border border-[var(--primary-color)] bg-[var(--primary-color)] text-white rounded-4xl"
+                  href="#"
+                >
                   Get Started
+                  <span>
+                    <GoArrowRight />
+                  </span>
                 </a>
               </li>
             </ul>
