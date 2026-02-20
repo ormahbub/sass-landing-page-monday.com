@@ -1,23 +1,8 @@
 import "./Header.css";
 import mondayLogo from "../../assets/images/monday-logo.png";
 import productSwitcherIcon from "../../assets/images/product-switcher-icon.png";
-import { GoArrowRight } from "react-icons/go";
-import { RiArrowDownSLine } from "react-icons/ri";
-
-const NavLink = ({ text, url, dropdown }) => {
-  return (
-    <a className="flex items-center gap-2 text-[var(--text-color)]" href={url}>
-      {text}
-      {dropdown ? (
-        <span>
-          <RiArrowDownSLine />
-        </span>
-      ) : (
-        ""
-      )}
-    </a>
-  );
-};
+import Button from "../Elements/Button";
+import NavLink from "../Elements/NavLink";
 
 const Header = () => {
   return (
@@ -57,23 +42,20 @@ const Header = () => {
                 <NavLink text={"Login"} url={"#"} dropdown={false} />
               </li>
               <li className="menu-item">
-                <a
-                  className="btn header-btn-1 border border-[var(--primary-color)] text-[var(--primary-color)] py-2 px-4 rounded-4xl"
-                  href="#"
-                >
-                  Contact sales
-                </a>
+                <Button
+                  text={"Contact sales"}
+                  url={"#"}
+                  style={"btn-outline"}
+                  icon={false}
+                />
               </li>
               <li className="menu-item">
-                <a
-                  className="btn header-btn-2 py-2 px-4 border border-[var(--primary-color)] bg-[var(--primary-color)] text-white rounded-4xl"
-                  href="#"
-                >
-                  Get Started
-                  <span>
-                    <GoArrowRight />
-                  </span>
-                </a>
+                <Button
+                  text={"Get Started"}
+                  url={"#"}
+                  style={"btn-solid"}
+                  icon={true}
+                />
               </li>
             </ul>
           </nav>
