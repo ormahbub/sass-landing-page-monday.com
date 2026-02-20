@@ -1,3 +1,5 @@
+@import "tailwindcss";
+/* 
 .site-header {
   padding: 15px 0;
 }
@@ -74,4 +76,4 @@ a.btn.header-btn-1:hover {
 a.btn.header-btn-2:hover {
   color: #f0f3ff;
   background-color: #5034ff;
-}
+} */

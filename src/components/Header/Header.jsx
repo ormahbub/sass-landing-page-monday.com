@@ -5,13 +5,13 @@ import productSwitcherIcon from "../../assets/images/product-switcher-icon.png";
 const Header = () => {
   return (
     <header id="header" className="site-header">
-      <div className="container">
-        <div className="header-left">
-          <div className="site-logo">
-            <img src={mondayLogo} alt="Monday Logo" />
+      <div className="container flex justify-between items-center">
+        <div className="header-left flex items-center gap-5">
+          <div className="site-logo max-w-[168px]">
+            <img className="max-w-full" src={mondayLogo} alt="Monday Logo" />
           </div>
           <nav className="nav-menu">
-            <ul className="primary-menu">
+            <ul className="primary-menu flex gap-5">
               <li className="menu-item">
                 <a href="#">Products</a>
               </li>
@@ -30,9 +30,9 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-        <div className="header-right">
+        <div className="header-right flex items-center gap-5">
           <nav className="nav-menu">
-            <ul className="secondary-menu">
+            <ul className="secondary-menu flex gap-5">
               <li className="menu-item">
                 <a href="#">Pricing</a>
               </li>
