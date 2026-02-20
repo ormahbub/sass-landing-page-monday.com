@@ -1,0 +1,48 @@
+{
+  "main-menu": {
+    "name": "Main Menu",
+    "menu-items": [
+      {
+        "item-name": "Products",
+        "item-url": "#",
+        "dropdown": true
+      },
+      {
+        "item-name": "AI",
+        "item-url": "#",
+        "dropdown": true
+      },
+      {
+        "item-name": "Solutions",
+        "item-url": "#",
+        "dropdown": true
+      },
+      {
+        "item-name": "Resources",
+        "item-url": "#",
+        "dropdown": true
+      },
+      {
+        "item-name": "Enterprise",
+        "item-url": "#",
+        "dropdown": false
+      }
+    ]
+  },
+
+  "secondery-menu": {
+    "name": "Secondery Menu",
+    "menu-items": [
+      {
+        "item-name": "Pricing",
+        "item-url": "#",
+        "dropdown": false
+      },
+      {
+        "item-name": "Login",
+        "item-url": "#",
+        "dropdown": false
+      }
+    ]
+  }
+}

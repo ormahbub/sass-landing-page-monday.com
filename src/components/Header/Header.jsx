@@ -3,6 +3,7 @@ import mondayLogo from "../../assets/images/monday-logo.png";
 import productSwitcherIcon from "../../assets/images/product-switcher-icon.png";
 import Button from "../Elements/Button";
 import NavLink from "../Elements/NavLink";
+import NavMenu from "../Elements/NavMenu";
 
 const Header = () => {
   return (
@@ -12,25 +13,7 @@ const Header = () => {
           <div className="site-logo max-w-[168px]">
             <img className="max-w-full" src={mondayLogo} alt="Monday Logo" />
           </div>
-          <nav className="nav-menu">
-            <ul className="primary-menu flex gap-5 text-sm text-[var(--text-color)]">
-              <li className="menu-item">
-                <NavLink text={"Products"} url={"#"} dropdown={true} />
-              </li>
-              <li className="menu-item">
-                <NavLink text={"AI"} url={"#"} dropdown={true} />
-              </li>
-              <li className="menu-item">
-                <NavLink text={"Solutions"} url={"#"} dropdown={true} />
-              </li>
-              <li className="menu-item">
-                <NavLink text={"Resources"} url={"#"} dropdown={true} />
-              </li>
-              <li className="menu-item">
-                <NavLink text={"Enterprise"} url={"#"} dropdown={false} />
-              </li>
-            </ul>
-          </nav>
+       <NavMenu />
         </div>
         <div className="header-right flex items-center gap-5">
           <nav className="nav-menu">
