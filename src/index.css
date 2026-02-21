@@ -3,14 +3,9 @@
 :root {
   --primary-color: #6161ff;
   --text-color: #535768;
+  --text-color-2: #676879;
+  --bg-color: #f0f3ff;
 }
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-  transition: all 0.3s;
-}
-
 
 body {
   font-family: "Poppins", sans-serif;
